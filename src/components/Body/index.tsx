@@ -41,7 +41,6 @@ export default function Body() {
 
   function deleteTask(taskToDelete: string) {
     const taskIndex = tasks.findIndex((task) => task === taskToDelete);
-    console.log(taskIndex);
 
     if (taskIndex === -1) {
       const newTaskList = tasks.filter((task) => task !== taskToDelete);
